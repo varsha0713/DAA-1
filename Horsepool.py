@@ -34,4 +34,4 @@ if index != -1:
 else:
     print("Pattern not found in the text.")
 //Pattern found at index: 47
-//
+///
