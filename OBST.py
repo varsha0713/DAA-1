@@ -21,3 +21,6 @@ keys = [10, 12, 20]
 freq = [34, 8, 50]
 result = optimal_bst(keys, freq)
 print("Optimal BST Cost:", result)
+//OUTPUT:
+Optimal BST Cost: 142
+//
