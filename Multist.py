@@ -2,11 +2,11 @@ def multistage_graph(graph, cost_matrix):
     num_stages = len(graph)
     num_nodes = len(graph[0])
 
-    # Initialize the cost and path arrays
+    
     min_cost = [0] * num_nodes
     path = [-1] * num_stages
 
-    # Calculate costs and optimal paths
+   
     for stage in range(num_stages - 2, -1, -1):
         for node in range(num_nodes):
             min_cost[node] = float('inf')
@@ -16,7 +16,7 @@ def multistage_graph(graph, cost_matrix):
                     min_cost[node] = total_cost
                     path[node] = neighbor
 
-    # Reconstruct the optimal path
+  
     optimal_path = []
     current_node = path[0]
     optimal_path.append(current_node)
@@ -26,7 +26,7 @@ def multistage_graph(graph, cost_matrix):
 
     return optimal_path[::-1], min_cost[0]
 
-# Example multistage graph and cost matrix
+
 graph = [
     [1, 2],
     [3, 4],
